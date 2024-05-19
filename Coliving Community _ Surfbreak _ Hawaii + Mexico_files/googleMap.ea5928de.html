@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0356)https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/media/googleMap.ea5928de.html?defaultLocation=1&showZoom=true&showMapType=true&language=en&id=dataItem-ln0kx3v6&googleMapsScriptPath=%2Fservices%2Feditor-elements-library%2Fdist%2Fthunderbolt%2Fmedia%2Fgoogle-map.min.c5cac041.js&origin=https%3A%2F%2Fwww.surfbreakcoliving.com -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+      <style type="text/css">
+        * {
+          border: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        html {
+          height: 100%;
+        }
+
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        #map_canvas {
+          height: 100%;
+          width: 100%;
+        }
+
+        .gm-style-iw p {
+          width: 101%;
+        }
+
+        #content {
+          overflow-x: hidden;
+        }
+      </style>
+      <script>
+        (function () {
+          var params = new URLSearchParams(window.location.search);
+          var decodedGoogleMapsScriptPath = decodeURIComponent(
+            params.get('googleMapsScriptPath'),
+          );
+          var googleMapsScriptPath;
+          try { // if it is an URL, get only path part
+            googleMapsScriptPath = new URL(decodedGoogleMapsScriptPath).pathname;
+          } catch (e) {
+            googleMapsScriptPath = decodedGoogleMapsScriptPath;
+          }
+          var scriptUrl = `${googleMapsScriptPath}?origin=${decodeURIComponent(params.get('origin'))}`;
+
+          var script = document.createElement('script');
+          script.src = scriptUrl;
+          document.head.appendChild(script);
+        })();
+      </script><script src="./google-map.min.c5cac041.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./common.js"></script><script type="text/javascript" charset="UTF-8" src="./util.js"></script><script type="text/javascript" charset="UTF-8" src="./map.js"></script><script type="text/javascript" charset="UTF-8" src="./marker.js"></script><script type="text/javascript" charset="UTF-8" src="./infowindow.js"></script></head>
+  
+  <body class="vsc-initialized">
+    <div id="map_canvas"><div style="height: 100%; width: 100%;"></div></div>
+  
+
+<script type="text/javascript" src="./js"></script></body></html>
