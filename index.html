@@ -12,6 +12,9 @@
   <link rel="shortcut icon" href="https://static.wixstatic.com/media/1f9c09_544a21924f6244ab8ee78e570a51c498%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/1f9c09_544a21924f6244ab8ee78e570a51c498%7Emv2.png" type="image/png">
   <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/1f9c09_544a21924f6244ab8ee78e570a51c498%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/1f9c09_544a21924f6244ab8ee78e570a51c498%7Emv2.png" type="image/png">
 
+  <!-- YRS: Links hieronder zijn voor stylesheet om custom styling van Voiceflow te overrulen: -->
+
+
   <!-- Safari Pinned Tab Icon -->
   <!-- <link rel="mask-icon" href="https://static.wixstatic.com/media/1f9c09_544a21924f6244ab8ee78e570a51c498%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/1f9c09_544a21924f6244ab8ee78e570a51c498%7Emv2.png"> -->
 
@@ -1623,7 +1626,7 @@ font-display: swap;
                       s = d.getElementsByTagName(t)[0];
                     v.onload = function () {
                       window.voiceflow.chat.load({
-                        verify: { projectID: '662b920a5750c73428ff493d' },
+                        verify: { projectID: '6655be76ce58376f4d1d93d8' },
                         url: 'https://general-runtime.voiceflow.com',
                         versionID: 'production',
                         user: {
@@ -1653,14 +1656,14 @@ font-display: swap;
                         // Delay the first proactive message
                         setTimeout(function() {
                           window.voiceflow.chat.proactive.push(
-                            { type: 'text', payload: { message: "Aloha! Want to find the perfect tour? 🌺" } }
+                            { type: 'text', payload: { message: "Aloha Surfbreaker! 🏄‍♂️" } }
                           );
                         }, 2000); // milliseconds delay for the first message adjust as needed
             
                         // Delay the second proactive message
                         setTimeout(function() {
                           window.voiceflow.chat.proactive.push(
-                            { type: 'text', payload: { message: "I can help you! 😊" } }
+                            { type: 'text', payload: { message: "Need help? 😊" } }
                           );
                         }, 3500); // Additional milliseconds delay for the second message adjust as needed
             
@@ -1670,7 +1673,7 @@ font-display: swap;
                         }, 4000); // Adjust this delay if needed to open the chat after messages
                       });
                     };
-                    v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+                    v.src = 'https://github.com/YannickSegaar/react-chat/blob/pages/packages/react-chat/dist/romaixbundle.mjs';
                     v.type = 'text/javascript';
                     s.parentNode.insertBefore(v, s);
                   })(document, 'script');
@@ -1678,3 +1681,8 @@ font-display: swap;
               </body>
             </html>
             
+            
+
+            <!-- https://cdn.voiceflow.com/widget/bundle.mjs -->
+
+            <!-- https://github.com/YannickSegaar/react-chat/blob/pages/packages/react-chat/dist/romaixbundle.mjs -->
